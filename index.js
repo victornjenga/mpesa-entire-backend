@@ -48,7 +48,7 @@ const getAccessToken = async (req, res, next) => {
     });
 };
 
-//STEP 2 //stk push
+//STEP 2 //stk pus
 app.post("/stk", getAccessToken, async (req, res) => {
   const phone = req.body.phone.substring(1); //formated to 72190........
   const amount = req.body.amount;
